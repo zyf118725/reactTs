@@ -1,9 +1,19 @@
 import React from 'react'
-import './index.less'
+import { Link, NavLink } from "react-router-dom";
+import './index.less';
+import { Button, Space } from 'antd';
 function Header() {
+  const navs = [
+    {name: '首页', url:'/'},
+    {name: '新闻', url:'/news'},
+  ]
   return (
     <div className='headw'>
-      <div>我是头部</div>
+      <Space size={8}>
+        {navs.map((item, i) =>(
+          <Link className='item' to={item.url} key={i}>{item.name}</Link>
+        ))}
+      </Space>
     </div>
   )
 }
