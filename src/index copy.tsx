@@ -1,20 +1,25 @@
-// import React from 'react'
-import Layout from '../../components/Layout';
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+// import './assets/css/reset.css';
+// import 'antd/dist/antd.css';
 
-function Home() {
-  return (
-    <div>
-      <Layout>
-        <div>Home</div>
-      </Layout>
-    </div>
-  )
-}
+// import {BrowserRouter as Router, useRoutes} from 'react-router-dom'
+// import AppRouter from './routes';
 
-export default Home
+// const root = ReactDOM.createRoot(
+//   document.getElementById('root') as HTMLElement
+// );
+
+// root.render(
+//   <Router>
+//     <AppRouter />
+//   </Router>
+// );
+
 
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 
 /**
  * 营销卡片渲染数据
@@ -115,4 +120,19 @@ const CardList: React.FC<{ list: IDirectVoucher[] }> = (props) => {
   );
 };
 
-ReactDOM.render(<CardList list={cardDataList} />, document.getElementById('app'));
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
+
+root.render(
+  <CardList list={cardDataList} />
+);
+
+// ReactDOM.render(<CardList list={cardDataList} />, document.getElementById('app'));
+
+
+// root.render(
+//   <Router>
+//     <AppRouter />
+//   </Router>
+// );

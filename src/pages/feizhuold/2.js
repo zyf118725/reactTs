@@ -1,18 +1,3 @@
-// import React from 'react'
-import Layout from '../../components/Layout';
-
-function Home() {
-  return (
-    <div>
-      <Layout>
-        <div>Home</div>
-      </Layout>
-    </div>
-  )
-}
-
-export default Home
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 
